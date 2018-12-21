@@ -1,0 +1,32 @@
+<!doctype html>
+<html>  <!--ng stands for angular-->
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="todo.js"> </script>
+	
+  </head>
+
+  <body ng-app="todoApp" ng-controller="app">
+
+     <div id="main_div">
+	   <h1 align="center">Add Task</h1>
+		<input type="text" ng-keyup="searchEnter()"  id="task" ng-model="task"><br/><br/>
+		<div id="showTask">
+		  <ol>
+		    <li ng-repeat="myTask in tasks track by $index">
+			  <input type="checkbox" ng-model="myTask.status" id="box">
+			  <span contentEditable="false" ng-keyup="enterAgain(myTask.taskMsg)" ng-dblclick="edit(myTask.taskMsg)" ng-model="myTask.taskMsg" class="done-{{myTask.status}}">
+			  
+				{{myTask.taskMsg}} 
+			   
+			 </span>
+			</li>
+		  </ol>
+		</div>
+	 </div>
+	
+       
+  </body>
+</html>

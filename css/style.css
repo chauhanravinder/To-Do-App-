@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	margin-top:30px;
+}
+#main_div{
+	border:3px solid black;
+	width:50%;
+	margin-left:25%;
+	padding-bottom:30px;
+	margin-top:40px;
+
+}
+ol{
+	margin-left:40px;
+}
+ol li{
+	font-size:20px;
+}
+#task{
+	width:80%;
+	margin-left:10%;
+	margin-top:30px;
+	height:30px;
+	font-size:20px;
+}
+#showTask{
+	padding:10px;
+	border:1px solid red;
+	margin-left:10%;
+	width:77.4%;
+	background-color:#E2EDF0;
+	
+}
+span.done-true{
+	    	  color:grey;
+		  font-style:italic;
+		  text-decoration:line-through;
+	 }
